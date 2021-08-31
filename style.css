@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+
+
+.container{
+    width: 1100px;
+    margin: auto;
+}
+body{
+    font-family: 'Besley', serif;
+}
+
+
+/* header */
+.header{
+    background-color: rgb(131, 255, 7);
+}
+.logo{
+   width: 20%;
+}
+.logo img {
+    width: 120px;
+    padding: 10px 0;
+    border-radius: 50%;
+    
+}
+.menu{
+    width: 60%;
+}
+.menu ul{}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+    line-height: 70px;
+    transition: .5s;
+}
+.menu ul li:hover > a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(81, 156, 6);
+}
+
+.o-btn {
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: none;
+    transition: .5s;
+    border-radius: 10px;
+}
+.o-btn:hover{
+    background-color: rgb(79, 79, 153);
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 95px;
+}
+
+
+
+.menu ul li{
+    position: relative;
+    margin-left: -5px;
+}
+.menu ul li ul{
+    position: absolute;
+    width: 300px;
+    top: 133%;
+    left: 0;
+    background-color: rgb(131, 255, 7);
+    text-align: center;
+    border-top: 2px solid rgb(0, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.menu ul li ul li{
+    display: block;
+    border-bottom:2px solid rgb(0, 0, 0) ;
+}
+.menu ul li ul li a{
+    display: block;
+    margin-left: 5px;
+}
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+
+
+
+
+/* banner part */
+
+.banner{
+    background-image: url(./bg\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    text-align: center;
+    /* position: relative;
+    z-index: 9; */
+}
+/* .banner::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.4);
+    z-index: -1;
+} */
+.banner h1{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 240px;
+}
+.banner p {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+.b-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: aqua;
+    color: black;
+    font-weight: 500;
+    transition: .5s;
+}
+.b-btn:hover {
+    background-color: #87bcab;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+/* banner bottom */
+.banner-bottom{
+    background-color: darkgrey;
+    padding-bottom: 70px;
+}
+.banner-lt{
+    width: 50%;
+}
+.banner-rt{
+    width: 50%;
+}
+.banner-lt h1 {
+    padding-top: 50px;
+    text-align: center;
+}
+.banner-lt p {
+    font-size: 14px;
+    padding-top: 20px;
+    padding-right: 20px;
+    color: #363a3e;
+}
+.banner-rt img {
+    width: 500px;
+    margin-top: 90px;
+}
+
+
+/* service section */
+.service{
+    background-color: #f5f5f5;
+    padding-bottom: 70px;
+}
+.service-1 h1 {
+    padding-top: 70px;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+.service-1 p{
+    padding-bottom: 50px;
+}
+
+.service-box {
+    width: 30%;
+    box-shadow: 2px 2px 20px rgba(0,0,0,.6);
+    padding: 25px;
+    margin: 17px;
+    box-sizing: border-box;
+    transition: 1s;
+    overflow: hidden;
+}
+.s-icon i {
+    width: 50px;
+    float: left;
+    height: 127px;
+    font-size: 30px;
+    color: blueviolet;
+}
+.service-box:hover{
+    transform: scale(1.2);
+}
+
+
+
+/* image section */
+
+.gallery{
+    background-color: lightslategrey;
+    padding-bottom: 50px;
+}
+.gallery h1{
+    padding: 40px;
+}
+.all-images{
+    width: 23%;
+}
+span img {
+    width: 236px;
+    height: 200px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 15px 0;
+}
